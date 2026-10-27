@@ -1,0 +1,15 @@
+[Unit]
+Description=Paper RAG web app
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/paper-rag
+# 端口、只读模式、API Key 等都在 /opt/paper-rag/.env 中配置
+ExecStart=/opt/paper-rag/.venv/bin/python app.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-dotenv>=1.0
+pymupdf>=1.24,<2               # PyMuPDFLoader 的底层 PDF 解析库
+
+# LangChain
+langchain-core>=1.0
+langchain-community>=0.4        # 步骤1 PyMuPDFLoader / TextLoader
+langchain-text-splitters>=1.0   # 步骤2 CharacterTextSplitter / RecursiveCharacterTextSplitter
+langchain-experimental>=0.4     # 步骤2 SemanticChunker
+langchain-openai>=1.0           # 步骤3/4 OpenAIEmbeddings（对接硅基流动）
+langchain-chroma>=1.0           # 步骤3/4 Chroma 向量库
+langchain-deepseek>=1.0         # 步骤5 ChatDeepSeek
