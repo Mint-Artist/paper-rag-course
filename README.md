@@ -53,7 +53,7 @@ python app.py               # 浏览器打开 http://127.0.0.1:8000
 | 文件 | 内容 | 解压到 |
 |---|---|---|
 | `papers.zip`（约 467MB） | 默认的 200 篇论文 PDF | 项目根目录，得到 `papers/*.pdf` |
-| `index_qwen3-4b_recursive-800-120.zip`（约 300MB） | 用这 200 篇建好的向量索引（Qwen3-Embedding-4B，`recursive` 800/120） | 项目根目录，得到 `storage/chroma/` 和 `storage/index_info.json` |
+| `index_qwen3-4b_recursive-800-120.zip`（约 157MB） | 用这 200 篇建好的向量索引（Qwen3-Embedding-4B，`recursive` 800/120） | 项目根目录，得到 `storage/chroma/` 和 `storage/index_info.json` |
 
 ```bash
 curl -L -O https://github.com/Mint-Artist/paper-rag-course/releases/download/v1.0-data/papers.zip
